@@ -27,3 +27,31 @@ def amount_due_func(amount_due):
         amount_due_func(amount_due)
 
 main()
+
+
+
+'''
+
+def main():
+    amount_due = 50 #initial_due
+    amount_due_func(amount_due)
+
+def amount_due_func(amount_due):
+    print("Amount Due: ", amount_due)
+    inserted_coin = inserted_coin_func()
+    updated_amount_due = amount_due - inserted_coin
+    if updated_amount_due > 0:
+        amount_due_func(updated_amount_due)
+    else:
+        print("Change Owed: ", (-1 * updated_amount_due))
+
+
+def inserted_coin_func():
+    while True:
+        inserted_coin = int(input("Insert Coin: "))
+        if inserted_coin in [25, 10, 5]:
+            return inserted_coin
+
+main()
+
+'''
